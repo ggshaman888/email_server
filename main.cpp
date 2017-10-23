@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <QtCore/QCoreApplication>
 #include <debugapi.h>
 #include <QDebug>
@@ -56,3 +57,19 @@ int main(int argc, char *argv[])
 
     return a.exec();
 }
+=======
+#include "mainwindow.h"
+#include <QApplication>
+
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+
+
+    MainWindow w;
+    w.resize(500, 600);
+    w.show();
+
+    return a.exec();
+}
+>>>>>>> 5574fd98999175fd77ab5edbcbae233b5cf92fc2
