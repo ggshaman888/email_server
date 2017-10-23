@@ -2,6 +2,7 @@
 #include <config/subscribeconf.h>
 #include <config/configprovider.h>
 #include <config/muttconfig.h>
+#include <QMap>
 
 QueueMail::QueueMail(QObject *parent) : QObject(parent)
 {
@@ -64,7 +65,7 @@ int QueueMail::countProvider(QString provider)
 
 void QueueMail::addQueue(QString provider, int minutes)
 {
-  QMap<int, QList<QStringList>>::const_iterator iter = queue.begin();
+  QMap<int, QList<QStringList> >::const_iterator iter = queue.begin();
 /*  while(!queue.last())
     {
       iter.key();
